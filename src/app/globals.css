@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define custom CSS variables for foreground and background colors */
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+/* Adjust color scheme for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* Style the body element */
+body {
+  color: rgb(var(--foreground-rgb)); /* Set text color using the custom variable */
+  background: rgb(var(--background-start-rgb)); /* Set a solid background color */
+  min-height: 100vh; /* Ensure the background covers the full viewport height */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text alignment */
+}
+
+/* Additional custom styles */
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+}
+
+.border {
+  border-color: #d1d5db;
+}
+
+.placeholder-gray-500::placeholder {
+  color: #000000;
+}
+
+.bg-blue-600 {
+  background-color: #2563eb;
+}
+
+.bg-blue-500:hover {
+  background-color: #3b82f6;
+}

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Set the base URL for module resolution to the root directory
+    "paths": {
+      "@/*": ["src/*"] // Create an alias '@' that maps to the 'src' directory
+    }
+  }
+}
+
